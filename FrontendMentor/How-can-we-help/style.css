@@ -1,0 +1,131 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+}
+
+.nav {
+  display: flex;
+  height: 89px;
+  width: 99.3vw;
+  background-color: #000;
+  justify-content: space-between;
+}
+.nav__btn {
+  margin: 2rem;
+  padding-right: 10rem;
+}
+.nav__btn button {
+  margin-left: 1.4rem;
+  font-size: 2.4rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 200;
+}
+.nav__btn--signIn {
+  background-color: #4c5fd5;
+  color: white;
+  transition: 0.3s;
+}
+.nav__btn--signIn:hover {
+  color: black;
+  background-color: white;
+}
+.nav__btn--submit {
+  border: 1px solid white;
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+.nav__logo {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.nav__logo h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 9rem;
+}
+.nav__logo h3 {
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 3.3rem 2rem 2rem 0.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dadbf1;
+  height: 400px;
+  width: 100vw;
+}
+.header h1 {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 7.4rem;
+}
+.header input {
+  margin: 3rem;
+  font-size: 2rem;
+  padding: 2rem 48rem 2rem 2rem;
+  border-radius: 5px;
+  border-width: 1px;
+}
+.header input::-moz-placeholder {
+  opacity: 0.7;
+}
+.header input:-ms-input-placeholder {
+  opacity: 0.7;
+}
+.header input::placeholder {
+  opacity: 0.7;
+}
+.header i.flecha {
+  position: absolute;
+  top: 317px;
+  right: 580px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.header i.flecha:hover {
+  color: rgb(150, 209, 245);
+}
+
+.mainInfo {
+  width: 100vw;
+  height: 100rem;
+  display: grid;
+  grid-template-columns: 650px 650px;
+  grid-template-rows: 300px 300px 300px;
+  align-items: center;
+  justify-content: center;
+}
+.mainInfo img {
+  height: 90px;
+  float: left;
+  margin: 3rem;
+}
+.mainInfo__card:nth-child(odd) {
+  margin-right: 2rem;
+}
+.mainInfo:nth-child(-n+2) {
+  margin-top: 13rem;
+}
+.mainInfo b {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+.mainInfo p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.mainInfo a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

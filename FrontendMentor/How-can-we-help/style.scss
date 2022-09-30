@@ -1,0 +1,147 @@
+$color-nav: #000;
+$color-signIn: #4c5fd5;
+$color-header: #dadbf1;
+$blanco: #fff;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.nav {
+    display: flex;
+    height: 89px;
+    width: 99.3vw;
+    background-color: #000;
+    justify-content: space-between;
+
+    &__btn {
+        margin: 2rem;
+        padding-right: 10rem;
+
+        & button {
+            margin-left: 1.4rem;
+            font-size: 2.4rem;
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-weight: 200;
+        }
+
+        &--signIn {
+
+            background-color: $color-signIn;
+            color: white;
+            transition: 0.3s;
+           
+            &:hover {
+                color: black;
+                background-color: white;
+            }
+        }
+
+        &--submit {
+            border: 1px solid white;
+            background-color: rgb(29, 29, 29);
+            color: white;
+            
+         
+
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        color: white;
+
+        & h2 {
+            font-size: 3rem;
+
+            font-weight: 400;
+            margin-left: 9rem;
+        }
+
+        & h3 {
+            font-weight: 200;
+            font-size: 2rem;
+            margin: 3.3rem 2rem 2rem 0.5rem;
+        }
+    }
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-header;
+    height: 400px;
+    width: 100vw;
+    & h1{
+        margin: 0 auto;
+        font-weight: 300;
+        font-size: 7.4rem;
+    }
+    & input{
+        margin: 3rem;
+        font-size: 2rem;
+        padding:2rem 48rem 2rem 2rem;
+        border-radius:5px;
+        border-width: 1px;
+        &::placeholder{
+            opacity: 0.7;
+        }
+    }
+    & i.flecha{
+        position: absolute;
+        top: 317px;
+        right: 580px;
+        font-size: 2.5rem;
+        cursor: pointer;
+        transition: 0.1s;
+        &:hover{
+            color: rgb(150, 209, 245);
+        }
+    }
+
+}
+.mainInfo{
+    width: 100vw;
+    height: 100rem;
+    
+    display: grid;
+    grid-template-columns: 650px 650px;
+    grid-template-rows:300px 300px 300px;
+    align-items: center;
+    justify-content: center;  
+        & img{
+            height: 90px;
+            float: left;
+            margin: 3rem;
+        } 
+        &__card:nth-child(odd){
+            margin-right: 2rem;
+        }
+        &:nth-child(-n+2){
+        margin-top: 13rem;
+        
+       }
+        & b{
+            font-size: 2.7rem;
+            font-weight: 500;
+
+        }
+        & p{
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        & a{
+            font-size:1.5rem;
+            text-decoration:none;
+        }
+        
+}

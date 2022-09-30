@@ -1,0 +1,59 @@
+html {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 62.5%;
+}
+
+.container {
+  width: 53.3rem;
+  height: 100vh;
+  background-image: url(/interactive-card-details-form-main/images/bg-main-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#card--front {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20rem;
+  left: 20rem;
+  width: 49.7rem;
+  height: 29.5rem;
+  background-image: url(/interactive-card-details-form-main/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#card--front--info {
+  display: block;
+  margin-top: 43px;
+  height: 56%;
+  width: 100%;
+}
+#card--front img {
+  margin: 30px;
+}
+#card--front #card-number {
+  word-wrap: break-word;
+  font-size: 3rem;
+  margin: 90px;
+}
+#card--front #card-name {
+  font-size: 2rem;
+  margin: 100px;
+}
+#card--front #card-date {
+  font-size: 2rem;
+}
+#card--back {
+  position: absolute;
+  top: 51rem;
+  left: 40rem;
+  width: 49.7rem;
+  height: 29.5rem;
+  background-image: url(/interactive-card-details-form-main/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#card span {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
